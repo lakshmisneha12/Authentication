@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 340px;
+  padding: 30px;
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  color: white;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.card h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.field {
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.field input {
+  width: 100%;
+  padding: 12px 40px 12px 12px;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 8px;
+  color: white;
+  outline: none;
+}
+
+.field label {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #ccc;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.field input:focus + label,
+.field input:valid + label {
+  top: -7px;
+  font-size: 12px;
+  background: #203a43;
+  padding: 0 6px;
+  border-radius: 4px;
+}
+
+.eye {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: white;
+  color: #203a43;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.03);
+}
+
+.link {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.link a {
+  color: #ffd369;
+  text-decoration: none;
+}
+
+.error {
+  color: #ffb3b3;
+  font-size: 12px;
+  margin-top: 4px;
+  display: block;
+}

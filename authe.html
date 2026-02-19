@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="authe.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="card">
+    <h2>Login</h2>
+
+    <form id="loginForm">
+
+      <div class="field">
+        <input type="email" id="loginEmail" required>
+        <label>Email Address</label>
+        <small class="error" id="loginEmailError"></small>
+      </div>
+
+      <div class="field">
+        <input type="password" id="loginPassword" required>
+        <label>Password</label>
+        <span class="eye" onclick="togglePassword('loginPassword')">👁</span>
+        <small class="error" id="loginPasswordError"></small>
+      </div>
+
+      <button type="submit">Login</button>
+
+      <p class="link">
+        New user?
+        <a href="register.html">Register here</a>
+      </p>
+
+    </form>
+  </div>
+</div>
+
+<script src="authe.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Account</title>
+  <link rel="stylesheet" href="authe.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="card">
+    <h2>Create Account</h2>
+
+    <form id="registerForm">
+
+      <div class="field">
+        <input type="email" id="regEmail" required>
+        <label>Email Address</label>
+        <small class="error" id="regEmailError"></small>
+      </div>
+
+      <div class="field">
+        <input type="password" id="regPassword" required>
+        <label>Password</label>
+        <span class="eye" onclick="togglePassword('regPassword')">👁</span>
+        <small class="error" id="regPasswordError"></small>
+      </div>
+
+      <div class="field">
+        <input type="password" id="regConfirm" required>
+        <label>Confirm Password</label>
+        <small class="error" id="regConfirmError"></small>
+      </div>
+
+      <button type="submit">Register</button>
+
+      <p class="link">
+        Already have an account?
+        <a href="authe.html">Login</a>
+      </p>
+
+    </form>
+  </div>
+</div>
+
+<script src="authe.js"></script>
+</body>
+</html>
